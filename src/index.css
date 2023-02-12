@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+.text-truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.header-bg {
+  background-image: url("/src/img/main-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-bg {
+  background-image: url("/src/img/form-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile-bg {
+  background-image: url("/src/img/profile-cover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sign-in-bg {
+  background-image: url("/src/img/sign-in-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cta-bg {
+  background-image: url("/src/img/cta-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video-bg {
+  background-image: url("/src/img/video-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.outer-circle-bg {
+  background: rgba(255, 255, 255, 0.29);
+}
+
+.form-bg-overlay {
+  background: rgba(24, 4, 20, 0.86);
+}
+
+input[type="radio"]:checked {
+  background-color: #6c0a64;
+}
