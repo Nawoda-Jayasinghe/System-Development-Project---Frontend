@@ -28,7 +28,7 @@ const InsightItem = ({
               <img
                 src={itemOneImge}
                 alt="project cover"
-                className="object-cover h-28 w-28 rounded-xl"
+                className="object-cover h-28 w-28 rounded-xl  "
               />
               <div className="flex flex-col">
                 <p className="text-heading-two font-bold text-base leading-8">

@@ -39,7 +39,7 @@ const Dashboard = () => {
           <div className="w-8/12 flex flex-col justify-center items-center bg-white rounded-xl px-10 py-5 mb-10">
             <div className="w-full">
               <h2 className="text-login-color font-bold text-xl mb-10">
-                Prject Estimations and Donations
+                Project Estimations and Donations
               </h2>
               {data.length > 0 ? (
                 <LineGraph collected={data} />

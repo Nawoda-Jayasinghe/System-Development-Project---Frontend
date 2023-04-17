@@ -30,6 +30,7 @@ const MemberItem = ({ member, handleDeleteModal, updateUsers }) => {
       <td class="py-4 px-6">{member.email}</td>
       <td class="py-4 px-6">{member.phone}</td>
       <td class="py-4 px-6">{member.city}</td>
+
       {role !== "Employee" && <>
       <td class="py-4 px-6">
         {member.active ? (
@@ -61,6 +62,7 @@ const MemberItem = ({ member, handleDeleteModal, updateUsers }) => {
         </div>
       </td>
       </>}
+      
       <EditMemberModal
         updateUsers={() => updateUsers(1)}
         isEditModalOpen={isEditModalOpen}

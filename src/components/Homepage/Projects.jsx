@@ -24,7 +24,7 @@ const ProjectsInHomePage = () => {
       {/* start */}
       <div className="grid grid-cols-3 mt-10 gap-[30px]">
         {projects.map((project) => (
-          <div className="w-full shadow-lg border border-gray-400 rounded-xl overflow-hidden pb-5">
+          <div className="w-full shadow-lg border  rounded-xl overflow-hidden pb-5">
             <img
               src={project.imgURL}
               alt="project"

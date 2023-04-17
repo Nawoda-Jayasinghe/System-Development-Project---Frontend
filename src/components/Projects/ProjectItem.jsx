@@ -44,7 +44,9 @@ const ProjectItem = ({ project, handleDeleteModal, updateProjectCounter }) => {
           {project.percentage}%
         </div>
       </td>
+
       <td class="py-4 px-6">
+
         {project.completed ? (
           <div className="bg-login-color text-center px-3 py-2 rounded-3xl text-white text-xs">
             <h6>Done</h6>
@@ -57,17 +59,7 @@ const ProjectItem = ({ project, handleDeleteModal, updateProjectCounter }) => {
       </td>
       <td class="py-4 px-6">
         <div className="flex space-x-3">
-          {role !== "Employee" && (
-            <button
-              onClick={() => {
-                setIsEditModalOpen(true);
-              }}
-              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-            >
-              Edit
-            </button>
-          )}
-          <button
+        <button
             onClick={() => {
               setIsViewTasksOpen(true);
             }}
@@ -75,12 +67,26 @@ const ProjectItem = ({ project, handleDeleteModal, updateProjectCounter }) => {
           >
             View Tasks
           </button>
-          <button
+          {role !== "Employee" && (
+            <div>
+              <button className="px-3 "
+              onClick={() => {
+                setIsEditModalOpen(true);
+              }}
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+            >
+              Edit
+            </button>
+            <button
             onClick={() => handleDeleteModal(project?._id)}
             class="font-medium text-red-600 dark:text-red-500 hover:underline"
           >
             Remove
           </button>
+            </div>
+          )}
+          
+          
         </div>
       </td>
       <EditProjectModal

@@ -134,6 +134,21 @@ const Sidebar = () => {
           {role === "Manager" && (
             <li>
               <Link
+                to="/dashboard/analytics"
+                class={`transition ease-in-out flex items-center p-2 text-base font-normal  rounded-lg ${
+                  location.pathname === "/dashboard/analytics"
+                    ? "text-login-color bg-gray-100"
+                    : "text-icon-color-one hover:text-login-color hover:bg-gray-100"
+                }`}
+              >
+                <ChartPieIcon className="h-6 w-6" />
+                <span class="flex-1 ml-3 whitespace-nowrap">Analytics</span>
+              </Link>
+            </li>
+          )}
+          {role === "Manager" && (
+            <li>
+              <Link
                 to="/dashboard/predictions"
                 class={`transition ease-in-out flex items-center p-2 text-base font-normal  rounded-lg ${
                   location.pathname === "/dashboard/predictions"
@@ -147,21 +162,7 @@ const Sidebar = () => {
             </li>
           )}
           
-          {role === "Manager" && (
-            <li>
-              <Link
-                to="/dashboard/analytics"
-                class={`transition ease-in-out flex items-center p-2 text-base font-normal  rounded-lg ${
-                  location.pathname === "/dashboard/analytics"
-                    ? "text-login-color bg-gray-100"
-                    : "text-icon-color-one hover:text-login-color hover:bg-gray-100"
-                }`}
-              >
-                <ChartPieIcon className="h-6 w-6" />
-                <span class="flex-1 ml-3 whitespace-nowrap">Analytics</span>
-              </Link>
-            </li>
-          )}
+          
           <li>
             <Link
               to="/dashboard/profile"
